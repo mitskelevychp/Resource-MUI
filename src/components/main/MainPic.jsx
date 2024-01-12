@@ -8,8 +8,10 @@ import { styled } from "@mui/material/styles";
 import mainPic from "../../images/main.png";
 
 const MainPicture = styled("div")(({ theme }) => ({
+  margin: "0 auto",
   height: "700px",
-  width: "100%",
+  maxWidth: "1400px",
+  // width: "100%",
   borderTop: "1px solid #E0E0E0",
   backgroundImage: `url(${mainPic})`,
   backgroundSize: "auto",

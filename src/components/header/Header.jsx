@@ -56,6 +56,7 @@ export default function Header() {
         justifyContent: "space-between",
         alignItems: "center",
         position: "relative",
+        // borderBottom: "1px solid #E0E0E0",
       }}
     >
       <MobileMainMenu />
