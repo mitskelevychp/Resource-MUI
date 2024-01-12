@@ -21,13 +21,9 @@ const SearchIconWrapper = styled("div")(() => ({
 const HeaderInputBox = styled(Box)(({ theme }) => ({
   display: "flex",
   marginRight: "15px",
-  // !
   [theme.breakpoints.up("xs")]: {
     width: "250px",
   },
-  // [theme.breakpoints.up("sm")]: {
-  //   width: "250px",
-  // },
   [theme.breakpoints.up("md")]: {
     width: "auto",
     height: "42px",
@@ -56,7 +52,6 @@ export default function Header() {
         justifyContent: "space-between",
         alignItems: "center",
         position: "relative",
-        // borderBottom: "1px solid #E0E0E0",
       }}
     >
       <MobileMainMenu />

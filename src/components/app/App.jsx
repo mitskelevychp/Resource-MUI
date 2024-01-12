@@ -18,6 +18,10 @@ const navTheme = createTheme({
     neitral: {
       main: "#fff",
     },
+    green: {
+      main: "#2BCA8B",
+      dark: "#058954",
+    },
   },
 });
 

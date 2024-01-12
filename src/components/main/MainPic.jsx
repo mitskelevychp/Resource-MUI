@@ -9,20 +9,18 @@ import mainPic from "../../images/main.png";
 
 const MainPicture = styled("div")(({ theme }) => ({
   margin: "0 auto",
-  height: "700px",
+  height: "640px",
   maxWidth: "1400px",
-  // width: "100%",
   borderTop: "1px solid #E0E0E0",
   backgroundImage: `url(${mainPic})`,
   backgroundSize: "auto",
-  // backgroundSize: "1000px 500px",
   backgroundPositionX: "-865px",
   backgroundPositionY: "-58px",
   backgroundRepeat: "no-repeat",
   [theme.breakpoints.up("sm")]: {
+    height: "700px",
     backgroundPositionX: "-530px",
     backgroundPositionY: "0px",
-    // backgroundSize: "auto",
   },
   [theme.breakpoints.up("md")]: {
     backgroundPosition: "right",
@@ -122,13 +120,23 @@ export default function Main() {
 
           "@media (min-width: 768px)": {
             paddingTop: "85px",
-            width: "405px",
+            width: "480px",
             justifyContent: "space-between",
             columnGap: "0px",
           },
         }}
         >
-          <Button color="warning" variant="contained" sx={{ display: "flex", flexDirection: "column", textTransform: "capitalize" }}>
+          <Button
+            color="warning"
+            variant="contained"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              textTransform: "capitalize",
+              borderRadius: "0",
+              "@media (min-width: 768px)": { width: "211px", height: "63px", padding: "0px 30px" },
+            }}
+          >
             <Typography component="p" sx={{ fontSize: "15px", padding: "5px 0px", "@media (min-width: 768px)": { fontSize: "22px", padding: "0px" } }}>Visit our Blog</Typography>
             <Typography component="p" sx={{ display: "none", "@media (min-width: 768px)": { fontSize: "16px", display: "flex" } }}>Stories, News & info</Typography>
           </Button>
@@ -140,6 +148,8 @@ export default function Main() {
               display: "flex",
               flexDirection: "column",
               textTransform: "capitalize",
+              borderRadius: "0",
+              "@media (min-width: 768px)": { width: "255px", height: "63px", padding: "0px 30px" },
             }}
           >
             <Typography component="p" sx={{ fontSize: "15px", padding: "5px 0px", "@media (min-width: 768px)": { fontSize: "22px", padding: "0px" } }}>Resource Center</Typography>

@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-// import { ReactComponent as IconSVG } from "../../images/icons/logo.svg";
 
 export default function Logo() {
   return (
@@ -11,7 +10,6 @@ export default function Logo() {
         justifyContent: "space-around",
         alignItems: "center",
         left: "52px",
-        // left: "15%",
         width: "100px",
         height: "70px",
         paddingTop: "3px",
