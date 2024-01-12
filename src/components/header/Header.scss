@@ -1,0 +1,10 @@
+@use "../../styles//variables";
+
+.listText {
+    font-size: 12px;
+    white-space: nowrap;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    color: #222222;
+  }
