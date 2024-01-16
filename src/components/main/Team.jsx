@@ -2,12 +2,13 @@ import {
   // Container,
   Typography,
   Box,
+  Paper,
   List,
   ListItem,
   Button,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import backgroundImage from "../../images/mainBackground.png";
+import backgroundImage from "../../images/mainBackground.jpeg";
 import person1 from "../../images/main-person-1.png";
 import person2 from "../../images/main-person-2.png";
 import person3 from "../../images/main-person-3.png";
@@ -18,7 +19,7 @@ const imageData = [person1, person2, person3];
 const Image = styled("img")(() => ({
   position: "relative",
   zIndex: "auto",
-  "&:nth-child(2)": {
+  "&:nth-of-type(2)": {
     width: "105px",
     position: "absolute",
     zIndex: 1,
@@ -29,7 +30,7 @@ const Image = styled("img")(() => ({
       width: "auto",
       position: "absolute",
       zIndex: 1,
-      left: 60,
+      left: 58,
       top: 13,
     },
   },
@@ -38,7 +39,7 @@ const Image = styled("img")(() => ({
 const ImageMobile = styled("img")(() => ({
   position: "relative",
   zIndex: "auto",
-  "&:nth-child(2)": {
+  "&:nth-of-type(2)": {
     // width: "105px",
     position: "absolute",
     zIndex: 1,
@@ -65,7 +66,6 @@ export default function Team() {
   return (
     <>
       <Box
-        disableGutters
         sx={{
           margin: "0 auto",
           maxWidth: "1400px",
@@ -77,7 +77,7 @@ export default function Team() {
           padding: "50.5px 15px 50.5px 15px",
 
           "@media (min-width: 600px)": { padding: "50.5px 50px 50.5px 50px", flexDirection: "row" },
-          "@media (min-width: 800px)": { padding: "50.5px 110px 50.5px 110px" },
+          "@media (min-width: 800px)": { padding: "50.5px 170px 50.5px 170px" },
           // "@media (min-width: 1199px)": { width: "211px", height: "63px", padding: "0px 30px" },
           "@media (min-width: 1000px)": { justifyContent: "flex-start" },
         }}
@@ -116,7 +116,8 @@ export default function Team() {
             ))}
           </List>
         </Box>
-        <Box
+        <Paper
+          elevation={12}
           sx={{
             width: "400px",
             // width: "600px",
@@ -163,6 +164,7 @@ export default function Team() {
           >
             {imageData.map((i) => (
               <Image
+                key={i}
                 src={`${i}`}
                 alt={`team member ${i}`}
                 loading="lazy"
@@ -173,6 +175,7 @@ export default function Team() {
             variant="contained"
             color="green"
             sx={{
+              width: "146px",
               position: "absolute",
               top: 205,
               left: 245,
@@ -181,7 +184,7 @@ export default function Team() {
           >
             <Typography component="p" sx={{ fontSize: "15px", textTransform: "lowercase", padding: "5px 0px" }}>meet our team</Typography>
           </Button>
-        </Box>
+        </Paper>
       </Box>
 
       <Box
@@ -204,13 +207,7 @@ export default function Team() {
           "@media (min-width: 1000px)": { display: "none" },
         }}
       >
-        <Box
-          sx={{
-            // height: "150px",
-
-            // "@media (min-width: 1000px)": { height: "inherit" },
-          }}
-        >
+        <Box>
           <Typography
             component="h2"
             sx={{
@@ -248,6 +245,7 @@ export default function Team() {
         >
           {imageData.map((i) => (
             <ImageMobile
+              key={i}
               src={`${i}`}
               alt={`team member ${i}`}
               loading="lazy"

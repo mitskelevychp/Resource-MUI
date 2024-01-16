@@ -5,7 +5,7 @@ import {
   Container,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import mainPic from "../../images/main.png";
+import mainPic from "../../images/main.jpeg";
 
 const MainPicture = styled("div")(({ theme }) => ({
   margin: "0 auto",
@@ -55,9 +55,8 @@ export default function Main() {
   return (
     <MainPicture>
       <MainTextBlockWrapper>
-        {/* ! */}
         <MainTextBlock>
-          <Typography component="h1" sx={{ display: "flex", fontSize: "32px", "@media (min-width: 768px)": { fontSize: "49px" } }}>
+          <Typography component="h1" sx={{ fontSize: "32px", "@media (min-width: 768px)": { fontSize: "49px" } }}>
             The
             <Typography
               component="span"
