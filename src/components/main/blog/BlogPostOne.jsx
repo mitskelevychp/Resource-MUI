@@ -47,7 +47,8 @@ export default function BlogPostOne({ mobileScreen, picture, icon }) {
             backgroundColor: "#fff",
             padding: "20px 15px 0px 15px",
 
-            "@media (min-width: 1050px)": { width: "427px", paddingRight: "0px" },
+            "@media (min-width: 768px)": { width: "550px", paddingRight: "0px", height: "250px" },
+            "@media (min-width: 1050px)": { width: "427px" },
             "@media (min-width: 1199px)": { padding: "20px 0px 20px 15px" },
           }}
         >

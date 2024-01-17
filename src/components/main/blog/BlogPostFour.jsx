@@ -21,7 +21,12 @@ export default function BlogPostThree({ mobileScreen, picture }) {
         justifyContent: "center",
         alignItems: "center",
 
-        "@media (min-width: 768px)": { gridColumn: "1/5", padding: "45px 108px 40px 60px", display: "block" },
+        "@media (min-width: 768px)": {
+          gridColumn: "1/5",
+          gridRow: "3",
+          padding: "45px 108px 40px 60px",
+          display: "block",
+        },
         "@media (min-width: 1050px)": { gridRow: "3" },
         "@media (min-width: 1199px)": { gridColumn: "2", gridRow: "3" },
       }}

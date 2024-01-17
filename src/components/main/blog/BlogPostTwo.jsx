@@ -15,7 +15,8 @@ export default function BlogPostTwo({ mobileScreen, picture }) {
         gridColumn: "1",
         gridRow: "2",
 
-        "@media (min-width: 768px)": { gridColumn: "1/5" },
+        // "@media (min-width: 768px)": { gridColumn: "1/5" },
+        "@media (min-width: 768px)": { gridColumn: "1/3", gridRow: "2" },
         "@media (min-width: 1050px)": { gridColumn: "1/3", gridRow: "2" },
         "@media (min-width: 1199px)": { gridColumn: "2", gridRow: "1" },
       }}

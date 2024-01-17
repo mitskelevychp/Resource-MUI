@@ -15,7 +15,8 @@ export default function BlogPostThree({ mobileScreen, picture }) {
         gridColumn: "1",
         gridRow: "3",
 
-        "@media (min-width: 768px)": { gridColumn: "1/5" },
+        // "@media (min-width: 768px)": { gridColumn: "1/5" },
+        "@media (min-width: 768px)": { gridColumn: "3/5", gridRow: "2" },
         "@media (min-width: 1050px)": { gridColumn: "3/5", gridRow: "2" },
         "@media (min-width: 1199px)": { gridColumn: "2", gridRow: "2" },
       }}
@@ -72,6 +73,10 @@ export default function BlogPostThree({ mobileScreen, picture }) {
               fontSize: "18px",
               color: "#252061",
               lineHeight: 1.2,
+
+              "@media (min-width: 768px)": {
+                width: "250px",
+              },
             }}
           >
             7 Things About Photography Your Boss Wants To Know

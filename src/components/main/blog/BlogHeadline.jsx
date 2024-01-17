@@ -9,7 +9,8 @@ export default function BlogHeadline() {
         // textAlign: "center",
         paddingLeft: "15px",
         paddingBottom: "30px",
-        "@media (min-width: 1050px)": { width: "450px", paddingBottom: "60px", textAlign: "inherit" },
+        "@media (min-width: 768px)": { width: "500px", paddingBottom: "30px", textAlign: "inherit" },
+        "@media (min-width: 1050px)": { width: "450px", paddingBottom: "60px" },
       }}
     >
 

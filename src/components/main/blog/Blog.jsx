@@ -37,7 +37,13 @@ export default function Blog() {
           columnGap: "30px",
           // padding: "0px 5px",
 
-          "@media (min-width: 1199px)": { gridTemplateColumns: "7fr 5fr", gap: "30px", justifyContent: "space-between" },
+          "@media (min-width: 768px)": {
+            gridTemplateColumns: "7fr 5fr",
+            gap: "30px",
+            justifyContent: "space-between",
+            padding: "0px 15px",
+          },
+          // "@media (min-width: 1199px)": { gridTemplateColumns: "7fr 5fr", gap: "30px", justifyContent: "space-between" },
         }}
       >
 
